@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/login.css"/>
+    <title>MW - Login</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="index.html"><img class="logo-icon" src="img/favicon/logo.png" alt="Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><span class="cart-item-count"></span><a href="cart.html">Cart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="signup.html" class="login-status active">Login/Signup</a></li>
+        <li class="search-box">
+          <input class="search-txt" type="text" name="" placeholder="Type to search">
+          <button class="search-btn">
+              <img src="img/favicon/search.png" class="search-icon">
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main class="main-container">
+      <div class="three-split">
+        <section class="box login-form-section">
+          <form autocomplete="off" class="my-form login-form show-form">
+            <h1 class="form-header">Login</h1>
+            <div class="field-combo-split">
+              <label id="login-email-span">Email</label>
+              <input type="email" required="required" class="login-email" placeholder="Email">
+            </div>
+            <div class="field-combo-split">
+              <label id="login-password-span">Password</label>
+              <input type="password" required="required" class="login-password" placeholder="Password">
+            </div>
+            <div class="form-links">
+              <a class="n-link" href="#">Forgot Password ?</a>
+              <div></div>
+              <a class="a-link" onclick="showSignupForm()">Signup</a>
+            </div>
+            <button type="submit" class="form-btn pos-btn">Login</button>
+          </form>
+          <form autocomplete="off" class="my-form signup-form hide-form">
+            <h1 class="form-header">Sign Up</h1>
+            <div class="field-split">
+              <div class="field-combo-split">
+                <label id="signup-name-span">Name</label>
+                <input type="text" required="required" class="signup-name" placeholder="Name">
+              </div>
+              <div class="field-combo-split">
+                <label id="signup-surname-span">Surname</label>
+                <input type="text" required="required" class="signup-surname" placeholder="Surname">
+              </div>
+            </div>
+            <div class="field-combo-split">
+              <label id="signup-email-span">Email</label>
+              <input type="email" required="required" class="signup-email" placeholder="Email">
+            </div>
+            <div class="field-combo-split">
+              <label id="signup-birthdate-span">Birth Date</label>
+              <input type="date" required="required" class="signup-birthdate" placeholder="Birth Date">
+            </div>
+            <div class="field-combo-split">
+              <label id="signup-password-span">Password</label>
+              <input type="password" required="required" class="signup-password" placeholder="Password">
+            </div>
+            <div class="field-combo-split">
+              <label id="signup-con-password-span">Confirm Password</label>
+              <input type="password" required="required" class="signup-password-confirm" placeholder="Confirm Password">
+            </div>
+            <div class="form-links">
+              <a class="a-link" href="#">Why signup ?</a>
+              <div></div>
+              <a class="a-link" onclick="showLoginForm()">Login</a>
+            </div>
+            <button type="submit" class="form-btn pos-btn">Signup</button>
+          </form>
+        </section>
+      </div>
+      <!-- <section class="form-footer"></section> -->
+    </main>
+    <footer>
+      <section class="footer-section">
+        <div class="social-links">
+          <div class="social-link">
+            <a href="#"><img src="img/favicon/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/favicon/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="img/favicon/youtube.png" alt="youtube"></a>
+            <a href="#"><img src="img/favicon/tiktok.png" alt="tiktok"></a>
+            <a href="#"><img src="img/favicon/whatsapp.png" alt="whatsapp"></a>
+            <!-- <a href="#">Facebook</a> -->
+          </div>
+        </div>
+        <div class="copyright-div">
+          <p>&copy; Copyright rights reserved for MinWares &trade;</p>
+        </div>
+      </section>
+    </footer>
+    <script src="scripts/login.js"></script>
+    <script src="scripts/signup.js"></script>
+    <script src="scripts/navbar.js"></script>
+  </body>
+</html>

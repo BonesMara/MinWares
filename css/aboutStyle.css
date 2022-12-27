@@ -1,0 +1,114 @@
+/*---------//--------*/
+.about-history{
+  width: 90%;
+  margin: calc(var(--margin-size) * 5) 2.5%;
+  padding: var(--padding-size) 2.5%;
+  background: var(--main-color);
+  min-height: 80vh;
+}
+.history{
+  font-size: var(--h3);
+  /* text-align: center; */
+}
+.partner-Table{
+  width: 50%;
+  font-size: var(--h3);
+}
+.partner-Table th{
+  font-size: var(--h2);
+  text-align: left;
+}
+.partner-Table tr{
+  font-size: var(--h3);
+}
+tr img{
+  width: fit-content;
+  height: fit-content;
+}
+.main-body{
+  background: var(--main-color);
+  margin: 1vh 2.5vw;
+  padding: var(--padding-size);
+  border-radius: var(--padding-size);
+}
+
+/*---------------------------- FAQ PAGE ------------------------------*/
+.question{
+  border: solid calc(var(--padding-size) / 3) var(--negative);
+  font-size: 2rem;
+  padding: 0px;
+  border-radius: calc(var(--padding-size) / 2);
+  max-width: max-content;
+  min-width: 30vw;
+}
+.question-number{
+  color: var(--main-color);
+  background: var(--negative);
+  font-size: 2rem;
+  padding: calc(var(--padding-size) / 2);
+}
+.answer{
+  font-size: 1.5rem;
+  padding: 0px;
+}
+.answer-number{
+  color: var(--main-color);
+  background: var(--positive);
+  font-size: 1.5rem;
+  padding: calc(var(--padding-size) / 4) calc(var(--padding-size) / 2);
+  border-radius: calc(var(--padding-size) / 2);
+}
+.answer a{
+  text-decoration: none;
+  color: var(--positive);
+}
+.faq-ending-note{
+  background: var(--positive);
+  color: var(--main-color);
+  padding: var(--padding-size);
+  border-radius: var(--padding-size);
+  font-size: 1.5rem;
+  max-width: 30vw;
+}
+.faq-ending-note a{
+  text-decoration: none;
+  color: var(--negative);
+}
+
+/*---------------------------- CONTACT PAGE ------------------------------*/
+.split{
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  border: solid 2px var(--sec-color);
+  min-height: 65vh;
+  background: var(--sec-color);
+}
+.contact form{
+  display: flex;
+  gap: var(--padding-size);
+}
+form textarea{
+  font-family: 'Arial';
+  min-width: 395px;
+  max-width: 500px;
+  min-height: 50px;
+  max-height: 200px;
+}
+.myLabel{
+  color: var(--negative);
+  background: var(--negative);
+}
+.left{
+  padding-left: 1vw;
+  background: var(--positive);
+}
+.section-subtitle{
+  font-size: var(--h1);
+  color: var(--main-color);
+  text-decoration: underline;
+}
+.parag{
+  font-size: var(--h2);
+  color: var(--sec-color);
+  padding: 0%;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/navbar.css"/>
+    <link rel="stylesheet" href="css/shopStyle.css"/>
+    <title>MW - Cart</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="logo">
+        <a href="index.html"><img class="logo-icon" src="img/favicon/logo.png" alt="Logo"></a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><span class="cart-item-count"></span><a href="cart.html" class="active">Cart</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="login.html" class="login-status">Login/Signup</a></li>
+        <li class="search-box">
+          <input class="search-txt" type="text" name="" placeholder="Type to search">
+          <button class="search-btn">
+              <img src="img/favicon/search.png" class="search-icon">
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <main class="cart-main-container">
+      <h2 class="section-title">Cart</h2>
+      <section class="cart-section">
+        <table class="cart"></table>
+      </section>
+    </main>
+    <footer>
+      <section class="footer-section">
+        <div class="social-links">
+          <div class="social-link">
+            <a href="#"><img src="img/favicon/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="img/favicon/twitter.png" alt="twitter"></a>
+            <a href="#"><img src="img/favicon/youtube.png" alt="youtube"></a>
+            <a href="#"><img src="img/favicon/tiktok.png" alt="tiktok"></a>
+            <a href="#"><img src="img/favicon/whatsapp.png" alt="whatsapp"></a>
+            <!-- <a href="#">Facebook</a> -->
+          </div>
+        </div>
+        <div class="copyright-div">
+          <p>&copy; Copyright rights reserved for MinWares &trade;</p>
+        </div>
+      </section>
+    </footer>
+    <script src="scripts/cartRenderer.js"></script>
+    <script src="scripts/navbar.js"></script>
+  </body>
+</html>
